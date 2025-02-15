@@ -2,111 +2,115 @@
 
 ![Project Banner](public/ProjectBanner.webp)
 
-**OnlineCarController** es un proyecto experimental que fusiona el mundo de la robótica con el desarrollo web. Este proyecto te permite controlar el Smart Robot 3.0 Plus de Elegoo de forma remota, combinando dos potentes tecnologías:
+**OnlineCarController** is an experimental project that fuses robotics with web development. It allows you to remotely control the Elegoo Smart Robot 3.0 Plus by combining two powerful technologies:
 
-- **Arduino:** Para manejar motores, sensores (ultrasonido e infrarrojo) y la comunicación Bluetooth.
-- **React:** Una interfaz web (configurada con Vite) que utiliza la función experimental de Bluetooth en navegadores basados en Chromium para controlar el robot con el teclado o mediante parámetros específicos.
-
----
-
-## 📖 Resumen del Proyecto
-
-OnlineCarController integra dos componentes clave:
-- **Control Robótico:** Utilizando Arduino y clases especializadas para gestionar la mecánica y sensores del robot.
-- **Interfaz Web Interactiva:** Una aplicación React que se conecta vía Bluetooth (requiere activación de funciones experimentales en el navegador) y permite enviar comandos al robot de manera intuitiva.
-
-Este es mi primer proyecto combinando React y Arduino, una experiencia de aprendizaje y experimentación en ambas áreas.
+- **Arduino:** Manages motors, sensors (ultrasonic and infrared), and Bluetooth communication.
+- **React:** A web interface (configured with Vite) that uses the experimental Bluetooth feature in Chromium-based browsers to control the robot via keyboard inputs or custom parameters.
 
 ---
 
-## 🗂️ Estructura del Repositorio
+## 📖 Project Overview
+
+OnlineCarController integrates two key components:
+
+- **Robotic Control:** Uses Arduino and specialized classes to manage the robot's mechanics and sensors.
+- **Interactive Web Interface:** A React application that connects via Bluetooth (experimental feature must be enabled in your browser) to send intuitive commands to the robot.
+
+This is my first project combining React and Arduino—a valuable learning and experimental experience.
+
+---
+
+## 🗂️ Repository Structure
+
+
 OnlineCarController/
 
     ├── Complete_Car_With_Classes/
     
-        (Proyecto Arduino: Control de motores, sensores y Bluetooth)
+        (Arduino project: Motor control, sensors, and Bluetooth)
         
     ├── public/
         
-        (Recursos públicos para la aplicación React)
+        (Public assets for the React app)
         
     ├── src/
         
-        (Código fuente de la aplicación React)
+        (Source code for the React app)
         
     ├── package.json
         
-        (Configuración y dependencias de React (Vite))
+        (React (Vite) configuration and dependencies)
         
     └── README.md
         
-        (Documentación del proyecto)
+        (Project documentation)
+---
 
 - **Complete_Car_With_Classes/**  
-  Contiene el proyecto de Arduino con clases para:
-  - 🚀 **Control de motores**
-  - 📏 **Sensor ultrasonido**
-  - 👁️ **Sensor infrarrojo** (usando la librería [IRremote](https://github.com/z3t0/Arduino-IRremote))
-  - 🔵 **Comunicación Bluetooth**
+  Contains the Arduino project with classes for:
+  - 🚀 **Motor Control**
+  - 📏 **Ultrasonic Sensor**
+  - 👁️ **Infrared Sensor** (using the [IRremote](https://github.com/z3t0/Arduino-IRremote) library)
+  - 🔵 **Bluetooth Communication**
 
-- **Aplicación React (en la raíz):**  
-  - 🖥️ Interfaz interactiva para controlar el robot.
-  - 🎮 Permite el control mediante teclas o ingresando parámetros específicos (distancia, ángulo y velocidad).
-  - 🔗 Conexión a Bluetooth (requiere activar la función experimental en navegadores basados en Chromium).
-
----
-
-## ⚙️ Requisitos y Dependencias
-
-### Para el proyecto Arduino:
-- **Arduino IDE:** Última versión.
-- **Librería:**  
-  - [IRremote](https://github.com/z3t0/Arduino-IRremote) (para el sensor infrarrojo).
-
-### Para la aplicación React:
-- **Vite:** Utilizado para configurar y construir la aplicación.
-- **Bluetooth en el Navegador:**  
-  Es necesario activar la función experimental de Bluetooth en navegadores basados en Chromium para el correcto funcionamiento de la aplicación.
+- **React Application (in the root):**  
+  - 🖥️ Interactive web interface for controlling the robot.
+  - 🎮 Enables control via keyboard or by entering specific parameters (distance, angle, and speed).
+  - 🔗 Connects via Bluetooth (requires the experimental feature to be activated in Chromium-based browsers).
 
 ---
 
-## 🌟 Características y Funcionalidades
+## ⚙️ Requirements and Dependencies
+
+### For the Arduino Project:
+- **Arduino IDE:** Latest version.
+- **Library:**  
+  - [IRremote](https://github.com/z3t0/Arduino-IRremote) (for the infrared sensor).
+
+### For the React Application:
+- **Vite:** Used to configure and build the application.
+- **Browser Bluetooth:**  
+  The experimental Bluetooth feature in Chromium-based browsers must be activated for proper functionality.
+
+---
+
+## 🌟 Features and Functionality
 
 ### Arduino:
-- **Control de Motores:** Gestión precisa del movimiento del robot.
-- **Sensores:**
-  - **Ultrasonido:** Medición de distancias para evitar obstáculos.
-  - **Infrarrojo:** Utilizando la librería *IRremote* para detección.
-- **Comunicación Bluetooth:** Recepción de comandos para un control remoto.
+- **Motor Control:** Precise management of the robot's movement.
+- **Sensors:**
+  - **Ultrasonic:** Measures distances to avoid obstacles.
+  - **Infrared:** Detects using the *IRremote* library.
+- **Bluetooth Communication:** Receives commands for remote control.
 
-### Aplicación React:
-- **Interfaz Web Interactiva:** Controla el robot a través de una aplicación moderna y responsiva.
-- **Control por Teclado:** Envía comandos mediante pulsaciones de teclas.
-- **Parámetros Personalizables:** Define la distancia, ángulo y velocidad a través de un formulario.
-- **Bluetooth Experimental:** Conéctate al robot activando la función experimental en tu navegador y usando las claves correctas definidas en el código.
-
----
-
-## 🔌 Notas Adicionales
-
-- **Conexión Bluetooth:**  
-  Asegúrate de activar la función experimental de Bluetooth en tu navegador (disponible en navegadores basados en Chromium). Luego, ingresa las claves correctas especificadas en el código para establecer la conexión con el robot.
-
-- **Proyecto Experimental:**  
-  Este es mi primer proyecto integrando React y Arduino, ¡y está lleno de aprendizajes y desafíos interesantes!
+### React Application:
+- **Interactive Web Interface:** Modern and responsive app to control the robot.
+- **Keyboard Control:** Sends commands via key presses.
+- **Customizable Parameters:** Set distance, angle, and speed through a form.
+- **Experimental Bluetooth:** Connect to the robot by enabling the experimental feature in your browser and using the correct keys defined in the code.
 
 ---
 
-## 👤 Autor
+## 🔌 Additional Notes
+
+- **Bluetooth Connection:**  
+  Ensure the experimental Bluetooth feature is activated in your browser (available in Chromium-based browsers). Then, enter the correct keys specified in the code to establish the connection with the robot.
+
+- **Experimental Project:**  
+  This is my first project integrating React and Arduino, full of valuable learning experiences and exciting challenges!
+
+---
+
+## 👤 Author
 
 - **[ALVNF](https://github.com/alvnf)**
 
 ---
 
-## 💡 Contribuciones
+## 💡 Contributions
 
-¡Tus sugerencias y mejoras son bienvenidas! Si tienes ideas para expandir o mejorar el proyecto, no dudes en abrir un *issue* o enviar un *pull request*.
+Your suggestions and improvements are welcome! If you have ideas to expand or enhance the project, feel free to open an *issue* or submit a *pull request*.
 
 ---
 
-¡Diviértete explorando y experimentando con **OnlineCarController**! 🚀
+Have fun exploring and experimenting with **OnlineCarController**! 🚀
