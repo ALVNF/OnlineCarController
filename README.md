@@ -23,19 +23,24 @@ Este es mi primer proyecto combinando React y Arduino, una experiencia de aprend
 OnlineCarController/
 
     ├── Complete_Car_With_Classes/
+    
         (Proyecto Arduino: Control de motores, sensores y Bluetooth)
         
     ├── public/
-        (Recursos públicos para la aplicación React)
+        
+        (Recursos públicos para la aplicación React)
         
     ├── src/
-        (Código fuente de la aplicación React)
+        
+        (Código fuente de la aplicación React)
         
     ├── package.json
-        (Configuración y dependencias de React (Vite))
+        
+        (Configuración y dependencias de React (Vite))
         
     └── README.md
-        (Documentación del proyecto)
+        
+        (Documentación del proyecto)
 
 - **Complete_Car_With_Classes/**  
   Contiene el proyecto de Arduino con clases para:
