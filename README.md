@@ -1,6 +1,6 @@
 # 🚗 OnlineCarController
 
-![Project Banner](https://via.placeholder.com/800x200?text=OnlineCarController)
+![Project Banner](public/ProjectBanner.webp)
 
 **OnlineCarController** es un proyecto experimental que fusiona el mundo de la robótica con el desarrollo web. Este proyecto te permite controlar el Smart Robot 3.0 Plus de Elegoo de forma remota, combinando dos potentes tecnologías:
 
@@ -21,14 +21,19 @@ Este es mi primer proyecto combinando React y Arduino, una experiencia de aprend
 
 ## 🗂️ Estructura del Repositorio
 OnlineCarController/
+
     ├── Complete_Car_With_Classes/
         (Proyecto Arduino: Control de motores, sensores y Bluetooth)
+        
     ├── public/
         (Recursos públicos para la aplicación React)
+        
     ├── src/
         (Código fuente de la aplicación React)
+        
     ├── package.json
         (Configuración y dependencias de React (Vite))
+        
     └── README.md
         (Documentación del proyecto)
 
