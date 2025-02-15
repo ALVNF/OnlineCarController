@@ -42,8 +42,6 @@ OnlineCarController/
         (React (Vite) configuration and dependencies)
         
     └── README.md
-        
-        (Project documentation)
 ---
 
 - **Complete_Car_With_Classes/**  
